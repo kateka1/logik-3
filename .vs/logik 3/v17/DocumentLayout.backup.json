@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\REDMI\\source\\repos\\logik 3\\",
+  "WorkspaceRootPath": "C:\\Users\\REDMI\\source\\repos\\logik 3 (2)\\logik 3\\logik 3\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{88A378FA-AF22-4BA4-AB7E-A56D390A0A31}|logik 3\\logik 3.vcxproj|C:\\Users\\REDMI\\source\\repos\\logik 3\\logik 3\\logik 3.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{88A378FA-AF22-4BA4-AB7E-A56D390A0A31}|logik 3\\logik 3.vcxproj|C:\\Users\\REDMI\\source\\repos\\logik 3 (2)\\logik 3\\logik 3\\logik 3\\logik 3.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{88A378FA-AF22-4BA4-AB7E-A56D390A0A31}|logik 3\\logik 3.vcxproj|solutionrelative:logik 3\\logik 3.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -68,11 +68,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "logik 3.cpp",
-              "DocumentMoniker": "C:\\Users\\REDMI\\source\\repos\\logik 3\\logik 3\\logik 3.cpp",
+              "DocumentMoniker": "C:\\Users\\REDMI\\source\\repos\\logik 3 (2)\\logik 3\\logik 3\\logik 3\\logik 3.cpp",
               "RelativeDocumentMoniker": "logik 3\\logik 3.cpp",
-              "ToolTip": "C:\\Users\\REDMI\\source\\repos\\logik 3\\logik 3\\logik 3.cpp",
+              "ToolTip": "C:\\Users\\REDMI\\source\\repos\\logik 3 (2)\\logik 3\\logik 3\\logik 3\\logik 3.cpp",
               "RelativeToolTip": "logik 3\\logik 3.cpp",
-              "ViewState": "AgIAAKgBAAAAAAAAAAAAALwBAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAE4BAAAAAAAAAAAAAGoBAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-10-12T18:29:15.375Z",
               "EditorCaption": ""

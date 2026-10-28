@@ -334,6 +334,38 @@ void pqueue_dequeue(void)
     free(temp);
 }
 
+/* Подсчет элементов с заданным приоритетом */
+void pqueue_count_priority(void)
+{
+    struct node* curr = pqueue_head;
+    int priority, count = 0;
+
+    if (pqueue_head == NULL)
+    {
+        printf("Приоритетная очередь пуста\n");
+        return;
+    }
+
+    printf("Введите приоритет для подсчета: ");
+    if (scanf("%d", &priority) != 1)
+    {
+        printf("Ошибка ввода приоритета.\n");
+        return;
+    }
+
+    while (curr != NULL)
+    {
+        if (curr->priority == priority)
+        {
+            count++;
+        }
+        curr = curr->next;
+    }
+
+    printf("Количество элементов с приоритетом %d: %d\n",
+        priority, count);
+}
+
 /* Очистка одного списка */
 void free_list(struct node** h, struct node** l)
 {
@@ -369,6 +401,41 @@ int choose_list(void)
     return type;
 }
 
+/* задание функция перемещения введённого элемента в начало стека*/
+void stack_move_to_top(void)
+{
+    char name[256];
+    struct node* prev;
+
+    load_list(1);
+
+    if (head == NULL){printf("Стек пуст\n");return;}
+
+    printf("Введите имя элемента для переноса в начало стека: ");
+    scanf("%255s", name);
+
+    f = find(name);
+    if (f == NULL) return;
+    if (f == head)
+    {
+        printf("Элемент \"%s\" уже находится в начале стека.\n", name);
+        return;
+    }
+
+    prev = head;
+    while (prev->next != f)
+        prev = prev->next;
+
+    prev->next = f->next;
+    if (f == last) last = prev;
+
+    f->next = head;
+    head = f;
+
+    save_list(1);
+    printf("Элемент \"%s\" перенесён в начало стека.\n", name);
+}
+
 /* --- ГЛАВНАЯ ФУНКЦИЯ И МЕНЮ --- */
 
 int main(void)
@@ -393,6 +460,8 @@ int main(void)
         printf("Приоритетная очередь [Список №3]:\n");
         printf("  8. Добавить с приоритетом (pqueue_insert)\n");
         printf("  9. Извлечь высший приоритет (pqueue_dequeue)\n");
+        printf("  10. Найти элемент и переместить его наверх стека(stack_move_to_top)\n");
+        printf("  11. Подсчитать элементы с заданным приоритетом\n");
         printf("------------------------------------------------------\n");
         printf("  0. Выход\n");
         printf("Выберите действие: ");
@@ -445,6 +514,14 @@ int main(void)
             break;
         case 9:
             pqueue_dequeue();
+            break;
+        case 10:
+            stack_move_to_top();
+            load_list(1);
+           review();
+            break;
+        case 11:
+            pqueue_count_priority();
             break;
         case 0:
             free_all();
